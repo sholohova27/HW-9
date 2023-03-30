@@ -130,21 +130,6 @@ def handler(text):
 # и теперь нужно добавить в каждую ф-цию параметр *args, потому что в ф-ции теперь нужно передавать этот параметр тоже
 
 
-
-# def no_command(*text, Contacts: dict):
-#     print("Type the command. To see all commands type 'help'")
-
-
-
-# def Key_error_func(func) -> func:
-#     def inner(*args, **kwargs):
-#         # contacts = kwargs['contacts']
-#         try:
-#             return func(*args, **kwargs)
-#         except KeyErrorError:
-#             return f'Contact {name} is absent', contacts
-
-
 # Создаем словарь MODES из всех промежуточных ф-ций (каррирование)
 MODES = {"hello": hello_func,
          "add": add_func,
