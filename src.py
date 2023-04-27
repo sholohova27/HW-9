@@ -4,13 +4,13 @@ from json.decoder import JSONDecodeError
 
 
 # Загружаем словарь из файла или создаем пустой словарь (для сохранения данных)
-def read_contacts(file_name):
-    try:
-        with open(file_name, 'r') as f:
-            contacts = json.load(f)
-    except (FileNotFoundError, AttributeError, JSONDecodeError):
-        contacts = {}
-    return contacts
+# def read_contacts(file_name):
+#     try:
+#         with open(file_name, 'r') as f:
+#             contacts = json.load(f)
+#     except (FileNotFoundError, AttributeError, JSONDecodeError):
+#         contacts = {}
+#     return contacts
 
 
 # Записываем контакты в файл
